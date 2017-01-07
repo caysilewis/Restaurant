@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title> 4 Corners: Home</title>
+<link rel="icon" href="img/icon.jpg">
+ 
+
+<!-- styles -->
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/grid_6.css">
+<link rel="stylesheet" href="css/owl.theme.default.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link href='https://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<header>
+<div class="container">
+    <div class="row">
+        <div class="one-third">
+         <a href="index.html">   <img class="logo" src="img/logo.png" alt="Logo"></a> 
+    </div>
+          <div class="two-thirds">
+            <br>
+            <nav class="navbar center">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservations</a></li>
+                        
+                    </ul>
+                </nav>
+</div>
+</div>
+</header>
+
+<div class="container">
+    <div class="row">
+    <div class="full">
+        
+    </div>
+    </div>
+        <!-- begin carousel -->
+<div id="my-carousel">
+    <img src="img/1.jpg" alt="fancy dinnerware" > 
+    <img src="img/2.jpg" alt="inside of restaurant" >
+    <img src="img/3.jpg" alt="pasta" >
+    <img src="img/4.jpg" alt="burger" >
+    <img src="img/5.jpg" alt="sushi" >
+    <img src="img/6.jpg" alt="taco" > 
+</div>
+    <!-- end carousel --> 
+</div>
+<div class="container">
+<div class="row">
+ <div class="full">
+<h2> What is 4 Corner's </h2>
+<p>Here at four corners we are dedicated to providing our guests with an authentic international experience. We serve food from four countries known for harboring cuisine rich in taste and culture. We are a very pretigious restaurant located in the Hell's Kitchen district of New York City.  Our chefs are specially selected for the knowledge they possess about their country's cuisine.
+Since opening in 2003, 4 Corners, many celebrities have dined here including celebrity hacker Jonathan Cooper, singer Taylor Swift, famous chef Savannah Craft, actress Jennifer Anniston, former president Bush, and many more.</p>
+<h3> Founder </h3>
+<p> The founder of Four Corners is a young misses named Caysi. Having moved to New York City, she quickly acquired the funds to start a business through her graphic design company. Realizing that she not only had the ability to open
+her own resaurant but the appreciation of food, she decided that she could add to her legacy by opening 4 Corner's. She chose the most prestigious location of the Hell's Kitchen
+district of New York City. </p>
+<h3> What to expect </h3>
+<p> 4 Corners is open nightly from 5pm until our last party leaves. We are open 365 days a year to icrease opportunities for our guests to dine with us. We do require a dress code
+as 4 Corners is an elegant and premeire dining experience.  Formal attire or business casual is required to dine at 4 Corners. This means women must wear dresses, and men must wear a sports coat or a suit. Sandals, hats, and shorts are not permitted. Please plan to make reservations 6-12 months in advance as seating is highly competitive. If you do not follow our dresscode, regardless of if you have a reservation, you will not be seated.</p>
+
+</div>
+</div>
+
+
+<div class="row  hide-mobile">
+    <div class="one-fourth">
+<h3> Mexico </h3>
+<img src="img/mexico.jpg" alt="Mexican food with flag">
+    </div>
+    
+
+    <div class="one-fourth">
+<h3> America </h3>
+<img src="img/america.jpg" alt="American food with flag">
+    </div>
+    
+
+    <div class="one-fourth">
+<h3> Italy </h3>
+<img src="img/italy.png" alt="Italian food with flag">
+</div>
+    
+    <div class="one-fourth">
+<h3> Japan </h3>
+<img src="img/japan.jpg" alt="Japanese food with flag">
+    </div>
+</div>
+</div>
+
+<footer>
+<div class="container">
+<div class="row">
+   <div class="full"> 
+    <h2>Find Us</h2>
+   </div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="one-half"> 
+<div class="full"><div id="map"></div>
+</div>
+</div>
+
+<div class="one-half">
+   <h3> Follow us on the following @4cornersfood</h3>
+<a href="https://www.facebook.com"> <img src="img/facebook.png" alt="Facebook"> </a>
+         
+<a href="https://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter"></a>
+
+<a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+
+<a href="https://www.snapchat.com"> <img src="img/snapchat.jpg" alt="Snapchat"></a>
+
+<a href="https://www.youtube.com"><img src="img/youtube.png" alt="Youtube"></a>
+
+<a href="https://www.pinterest.com"> <img src="img/pinterest.jpg" alt="Pinterest"></a>
+</div>
+</div>
+</div>
+    
+
+
+<div class="row">
+    <div class="full">
+<p>690 10th Ave, New York, NY 10036 <br>
+Phone: (650) 555-0125 <br>
+**<i>Please plan to make reservations 6-12 months in advance, as seating is very competitive.</i><br>
+&copy; 2016 4 Corners inc.</p>
+</div>
+</div>
+</div>
+</footer>    
+<!-- javascript -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+    $('#my-carousel').owlCarousel({
+       autoplay : true,
+       autoplayHoverPause : true,
+       autoplayTimeout : 3000,
+       dots : true,
+       nav : false,
+       items : 1,
+       loop : true,
+       margin: 10,
+       
+    })
+</script>
+<script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 40.7630786, lng: -73.9929923},
+          zoom: 18
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+</body>
+</html>

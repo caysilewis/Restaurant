@@ -1,0 +1,210 @@
+/*** sectioning elements ***/
+
+body {
+background-color: #f2e6d9
+}
+
+header {
+
+}
+
+main {
+    /* I wouldn't recommend applying any styles to this
+       section as the 'main' element is not supported
+       in all browsers yet. */
+}
+
+footer {
+text-align: center;
+}
+
+nav {
+
+}
+
+section {
+
+}
+
+aside {
+
+}
+
+
+/**** base styles ***/
+
+h1 {
+color: #aa8d72;
+font-family: 'Pinyon Script', cursive;
+}
+h1.reservation{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+h2 {
+font-family: 'Pinyon Script', cursive;
+font-size: 40px;
+margin: 5px;
+text-align: center;
+}
+
+h3 {
+font-family: 'Pinyon Script', cursive;
+font-size: 25px;
+text-align: center;
+}
+
+h4 {
+font-family: 'Pinyon Script', cursive;
+font-size: 20px;
+text-align: center;
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+text-indent: 50px;
+}
+
+blockquote {
+
+}
+
+ol {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+
+
+/***** nav styles *****/
+.navbar {
+    background-color: #aa8d72;
+
+}
+
+
+.navbar a:hover, .navbar a:active {
+    background-color: #cfab89;
+}
+
+a:hover{
+
+}
+.navbar a{
+    color: white;
+    font-size: 35px;
+    font-family: 'Pinyon Script', cursive;
+}
+/*** image styles ***/
+
+img  {
+	max-width: 100%;
+}
+
+
+/*** link styles ***/
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+/***** footer styles****/
+
+.footer h3{
+    text-align: center;
+    size: 30px;
+    color: #aa8d72;
+}
+.footer ul{
+    list-style: none;
+}
+
+/***** other *****/
+p.menu{
+    text-align: center;
+    text-indent: 0px;
+}
+
+p.reservation{
+    text-align: center;
+    text-indent: 0px;
+}
+fieldset{
+    text-align: center;
+
+}
+p.enter{
+    font-size: 18px;
+    text-align: center;
+}
+
+#map {
+        width: 450px;
+        height: 450px;
+      
+      }
+
+img.logo{
+    width: 80%;
+}
+
+@media (max-width: 601px)
+{
+    img.logo{
+        width: 100%;
+    }
+    
+    .navbar a {
+        color: white;
+        font-size: 24px;
+        font-family: 'Pinyon Script', cursive;
+    }
+    #map {
+        width: 340px;
+        height: 400px;
+        padding: inherit;
+      }
+}
